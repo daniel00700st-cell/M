@@ -1,0 +1,267 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(135deg, #ff4fa3, #ff8cc8);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1{
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* CARRINHO */
+#icone-carrinho{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background: white;
+    color: #ff4fa3;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+#carrinho-popup{
+    display: none;
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    width: 320px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    z-index: 999;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#lista-carrinho{
+    list-style: none;
+    margin: 15px 0;
+}
+
+#lista-carrinho li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.btn-carrinho{
+    width: 100%;
+    border: none;
+    background-color: #ff4fa3;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-carrinho:hover{
+    background-color: #e63a8c;
+}
+
+.btn-remover{
+    border: none;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrinho-popup{
+    display: none;
+}
+
+#carrinho-popup.aberto{
+    display: block;
+}
+
+/* BANNER */
+#todos-produtos{
+    height: 850px;
+    background: url("logo.png") no-repeat center top;
+    background-size: 100% auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SEÇÕES */
+section{
+    padding: 50px 8%;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff4fa3;
+    font-size: 2rem;
+}
+
+/* GRID DE PRODUTOS */
+#maquiagem,
+#perfume,
+#acessorio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* TÍTULO DAS SEÇÕES */
+#maquiagem h2,
+#perfume h2,
+#acessorio h2{
+    grid-column: 1 / -1;
+}
+
+/* CARD */
+.produto{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.produto:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.produto img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.produto h3{
+    margin: 15px 0 10px;
+}
+
+.produto del{
+    color: #888;
+}
+
+.produto strong{
+    color: #ff2f7d;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* RESPONSIVO */
+@media (max-width: 768px){
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #todos-produtos{
+        height: 250px;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* LOGIN */
+
+#login-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+#login-box{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#login-box h2{
+    color: #ff4fa3;
+    text-align: center;
+}
+
+#login-box input{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#login-box button{
+    padding: 12px;
+    border: none;
+    background: #ff4fa3;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#login-box button:hover{
+    background: #e63a8c;
+}

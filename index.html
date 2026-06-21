@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>M&D Glamour</h1>
+
+        <nav>
+            <a href="#todos-produtos">TODOS OS PRODUTOS</a>
+            <a href="#maquiagem">MAQUIAGEM</a>
+            <a href="#perfume">PERFUME</a>
+            <a href="#acessorio">ACESSÓRIO</a>
+    
+        
+        </nav>
+
+        <div id="icone-carrinho">
+            🛒 <span id="contador-carrinho">0</span>
+        </div>
+    </header>
+
+
+    <!-- LOGIN -->
+    <div id="login-overlay">
+    <div id="login-box">
+        <h2>Faça seu login</h2>
+
+        <input type="text" id="nome" placeholder="Seu nome">
+
+        <input type="email" id="email" placeholder="Seu Gmail">
+
+        <button id="btn-login">
+            Entrar e ganhar desconto
+        </button>
+    </div>
+    </div>
+
+
+    <!--CARRINHO-->
+    <section id="carrinho-popup">
+        <h2>🛒 Carrinho</h2>
+
+        <ul id="lista-carrinho"></ul>
+
+        <p>
+            <strong>Total: R$ <span id="total">0.00</span></strong>
+        </p>
+    </section>
+
+
+    <!--TODOS OS PRODUTOS-->
+    <section id="todos-produtos">
+        <!--vai ter um evento e vai ficar passando anuncios aqui-->
+    </section>
+
+
+
+
+    <!--MAQUIAGEM-->
+    <section id="maquiagem">
+        <h2>Maquiagem</h2>
+
+        <div class="produto">
+            <img src="img_maquiagem/maquiagem_1.jpg" alt="Produto 1">
+            <h3>Base da LANCÔME</h3>
+            
+            <strong class="preco" data-preco="100">
+            <r1>R$ 100,00</r1>
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_maquiagem/maquiagem_2.jpg" alt="Produto 2">
+            <h3>Mascara de Cílios</h3>
+            
+            <strong class="preco" data-preco="150">
+                R$ 150,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_maquiagem/maquiagem_3.jpg" alt="Produto 3">
+            <h3>Mascara de cílios</h3>
+            
+            <strong class="preco" data-preco="200">
+                R$ 200,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_maquiagem/maquiagem_4.jpg" alt="Produto 4">
+            <h3>Basa</h3>
+            
+            <strong class="preco" data-preco="250">
+                R$ 250,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_maquiagem/maquiagem_5.jpg" alt="Produto 5">
+            <h3>Caneta deliniadora</h3>
+            
+            <strong class="preco" data-preco="300">
+                R$ 300,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_maquiagem/maquiagem_6.jpg" alt="Produto 6">
+            <h3>Lip combo</h3>
+           
+            <strong class="preco" data-preco="350">
+                R$ 350,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_maquiagem/maquiagem_7.jpg" alt="Produto 7">
+            <h3>Mascara de cílios</h3>
+          
+            <strong class="preco" data-preco="400">
+                R$ 400,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_maquiagem/maquiagem_8.jpg" alt="Produto 8">
+            <h3>Batom</h3>
+          
+            <strong class="preco" data-preco="450">
+                R$ 450,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_maquiagem/maquiagem_9.jpg" alt="Produto 9">
+            <h3>Lapis de boca</h3>
+        
+            <strong class="preco" data-preco="500">
+                R$ 500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        
+
+    </section>
+
+
+
+    <!--PERFUME-->
+    <section id="perfume">
+        <h2>Perfume</h2>
+
+        <div class="produto">
+            <img src="img_perfume/perfume_1.jpg" alt="Perfume 1">
+            <h3><p>perfume_1</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="950">
+                R$ 950,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_perfume/perfume_2.jpg" alt="Perfume 2">
+            <h3><p>perfume_2</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="1200">
+                R$ 1200,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_perfume/perfume_3.jpg" alt="Perfume 3">
+            <h3><p>perfume_3</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="1500">
+                R$ 1500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_perfume/perfume_4.jpg" alt="Perfume 4">
+            <h3><p>perfume_4</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="1800">
+                R$ 1800,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_perfume/perfume_5.jpg" alt="Perfume 5">
+            <h3><p>perfume_5</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="2000">
+                R$ 2000,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_perfume/perfume_6.jpg" alt="Perfume 6">
+            <h3><p>perfume_6</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="2500">
+                R$ 2500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_perfume/perfume_7.jpg" alt="Perfume 7">
+            <h3><p>perfume_7</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="3000">
+                R$ 3000,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_perfume/perfume_8.jpg" alt="Perfume 8">
+            <h3><p>perfume_8</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="3500">
+                R$ 3500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_perfume/perfume_9.jpg" alt="Perfume 9">
+            <h3><p>perfume_9</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="3500">
+                R$ 3500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        
+         
+    </section>
+
+
+
+    <!--ACESSÓRIO-->
+    <section id="acessorio">
+        <h2>Acessórios</h2>
+
+        <div class="produto">
+            <img src="img_acessórios/acessorio_1.jpg" alt="Acessório 1">
+            <h3><p>acessorio_1</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="2500">
+                R$ 2500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_acessórios/acessorio_2.jpg" alt="Acessório 2">
+            <h3><p>acessorio_2</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="3000">
+                R$ 3000,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_acessórios/acessorio_3.jpg" alt="Acessório 3">
+            <h3><p>acessorio_3</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="2500">
+                R$ 2500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_acessórios/acessorio_4.jpg" alt="Acessório 4">
+            <h3><p>acessorio_4</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="3000">
+                R$ 3000,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_acessórios/acessorio_5.jpg" alt="Acessório 5">
+            <h3><p>acessorio_5</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="3500">
+                R$ 3500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_acessórios/acessorio_6.jpg" alt="Acessório 6">
+            <h3><p>acessorio_6</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="2500">
+                R$ 2500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_acessórios/acessorio_7.jpg" alt="Acessório 7">
+            <h3><p>acessorio_7</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="3500">
+                R$ 3500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_acessórios/acessorio_8.jpg" alt="Acessório 8">
+            <h3><p>acessorio_8</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="2500">
+                R$ 2500,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="img_acessórios/acessorio_9.jpg" alt="Acessório 9">
+            <h3><p>acessorio_9</p>
+            </h3>
+            <del><p></p></del>
+            <strong class="preco" data-preco="3000">
+                R$ 3000,00
+            </strong>
+
+            <button class="btn-carrinho">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
